@@ -10,7 +10,6 @@ def getFavorites(user, favs=200):
 	url = "http://twitter.com/favorites/" + user + ".json?count=" + str(favs)
 	try:
 		req = urllib2.urlopen(url)
-		print req
 		return json.loads(req.read())
 	except urllib2.HTTPError, e:
 		if e.code == 401:
