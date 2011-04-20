@@ -11,7 +11,6 @@ import credentials
 
 
 def getUserID(username):
-	username = username.replace("@", "%40")
 	api_key = credentials.getCredentials("~/.flickr")[0].split()[0]
 	url = "http://api.flickr.com/services/rest/?method=flickr.people.findByUsername&api_key=" + api_key + "&nojsoncallback=1&format=json&username=" + username
 	req = urllib2.urlopen(url)
