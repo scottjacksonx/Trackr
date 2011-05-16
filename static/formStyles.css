@@ -1,0 +1,42 @@
+body {
+	background-color: #1d2024;
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+	font-weight: 300;
+	color: #DFDFDF;
+}
+
+h1 {
+	font-size: 18pt;
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+div.question {
+	padding: 10px;
+}
+
+input {
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+}
+
+input.text {
+	width: 255px;
+}
+
+option {
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+}
+
+#otherReasonContainer {
+	display: none;
+}
+
+textarea {
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+	width: 435px;
+	height: 200px;
+	border: 10px solid #D0D0D0;
+	padding: 5px;
+}

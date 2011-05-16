@@ -1,0 +1,52 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+	font-weight: 300;
+	font-rendering: optimizeLegibility;
+	background-color: #1d2024;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+	font-size: 42pt;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+h2 {
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+	font-size: 18pt;
+	margin-top: 0px;
+}
+
+h3 {
+	font-family: 'Droid Sans', Helvetica, Arial, san-serif;
+}
+
+blockquote {
+	width: 500px;
+	margin: 0 auto;
+	background-color: #FFF;
+	padding: 10px;
+	font-family: Georgia, serif;
+	border: 15px solid #DDD;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#container {
+	width: 640px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
+#header {
+	
+}

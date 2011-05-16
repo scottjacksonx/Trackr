@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv=Content-type content="text/html; charset=utf-8">
+	<title>Trackr</title>
+	<link rel=stylesheet href="static/formStyles.css" type="text/css" media=screen>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" charset="utf-8">
+		function showTextArea() {
+			var obj = document.getElementById("reason");
+			
+			if (obj.options[obj.selectedIndex].value == "other") {
+				document.getElementById("otherReasonContainer").style.display = "block";
+			} else {
+				document.getElementById("otherReasonContainer").style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1>Hi! You've just <i>Liked</i> something.</h1>
+		<h2>Would you mind answering a couple questions about what you just Liked?</h2>
+		
+		<form action="post">
+			<div class="question">
+				<span>What's its URL (if it has one)?</span>
+				<input class="text" type="text" name="url" />
+			</div>
+			<div class="question">
+				<span>Why did you Like it?</span>
+				<select name="reason" id="reason" onchange="showTextArea()">
+					<option value="funny">I thought it was funny</option>
+					<option value="inform">I learned something from it</option>
+					<option value="agree">I agree with it</option>
+					<option value="empathy">I empathise with the person that posted it</option>
+					<option value="reply">I just wanted to let the author know that I had seen it</option>
+					<option value="save">I wanted to save it so I can easily come back to it later</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="question" id="otherReasonContainer">
+				<textarea id="otherReason" name="otherReason"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="submit" value="Submit" id="submit" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
